@@ -11,6 +11,7 @@ const calcOGD = (tgz, e11, e12, e13, e21, e22, e23) => {
 
     // let newMounth = 0;
     let newYear = 0;
+    let newMounth = 0;
 
 
     // застосовувати якщо враховувати дні
@@ -31,11 +32,13 @@ const calcOGD = (tgz, e11, e12, e13, e21, e22, e23) => {
    
     if (mounth < 0) {
         newYear = year - 1;
+        newMounth = mounth + 12;
     } else {
         newYear = year;
+        newMounth = mounth;
     }
 
-    const totalMounth = newYear * 12 + mounth - 1;
+    const totalMounth = newYear * 12 + newMounth - 1;
 
      if (totalMounth <= 0) {
          amountOGD = 0;
