@@ -1,6 +1,13 @@
+.container{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
 .table {
     table-layout: fixed;
-    width: 100%;
+    max-width: 600px;
     border-collapse: collapse;
     border: 3px solid rgb(10, 1, 10);
 }

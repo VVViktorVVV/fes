@@ -6,7 +6,7 @@ const Table = ({ arrayR }) => {
 
     
     return (
-        <div>
+        <div className={classes.container}>
             <table className={classes.table}>
                 <caption>Суми до виплати</caption>
                 <thead>

@@ -57,18 +57,23 @@ const Form = ({setArrayR}) => {
     return (
         <div>
             <form className={classes.form}>
-                
-                <label className={classes.label}>
-                    Розрахункова сума грошового забезпечення
+                <div className={classes.container}>
+                    <label className={classes.label}>
+                        Розрахункова сума грошового забезпечення
+                        
                     <input
                         // type="number"
                         className={classes.input}
                         name="total"
                         onChange={handleInputChange1}
                         value={inputValue1}
-                    />
-                </label>
-                 <label className={classes.label}>
+                        />
+                        </label>
+                
+                </div>
+                
+                <div className={classes.container}>
+                    <label className={classes.label}>
                     Дата початку служби
                     <input
                         type="number"
@@ -91,7 +96,10 @@ const Form = ({setArrayR}) => {
                         onChange={handleInputChange4}
                         value={inputValue4}
                     />
-                    </label>
+
+                </label>
+                </div>
+                <div className={classes.container}><div className={classes.container}></div>
                     <label className={classes.label}>
                     Дата закінчення служби
                     <input
@@ -115,8 +123,12 @@ const Form = ({setArrayR}) => {
                         onChange={handleInputChange7}
                         value={inputValue7}
                     />
-                </label>
-                 <label className={classes.label}>
+                </label></div>
+                 
+                
+                
+
+                <div className={classes.container}><label className={classes.label}>
                     Дні невикористаної основної відпустки
                     <input
                         type="number"
@@ -124,8 +136,10 @@ const Form = ({setArrayR}) => {
                         onChange={handleInputChange8}
                         value={inputValue8}
                     />
-                </label>
-                <label className={classes.label}>
+                </label></div>
+                 
+
+                <div className={classes.container}><label className={classes.label}>
                     Дні невикористаної додаткової відпустки
                     <input
                         type="number"
@@ -133,7 +147,8 @@ const Form = ({setArrayR}) => {
                         onChange={handleInputChange9}
                         value={inputValue9}
                     />
-                </label>
+                </label></div>
+                
                 
                 <button type='button' className={classes.btn} onClick={handleSubmit}>Підрахуймо</button>
             </form> 

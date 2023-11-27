@@ -4,11 +4,14 @@
     margin-left: auto;
     margin-right: auto;
 
+    
+
 }
 
 .label {
     display: block;
     margin-top: 15px;
+    text-align: center;
 }
 
 /* .input {
@@ -20,4 +23,12 @@
     margin: 10px 0 10px 0;
     width: 100%;
 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Налаштуйте висоту контейнера відповідно до ваших потреб */
 }
