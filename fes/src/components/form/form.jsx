@@ -55,7 +55,7 @@ const Form = ({setArrayR}) => {
 
 
     return (
-        <div>
+        <div className={classes.container}>
             <form className={classes.form}>
                 <div className={classes.container}>
                     <label className={classes.label}>
